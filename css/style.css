@@ -1,0 +1,588 @@
+.montserrat-alternates-bold {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.montserrat-alternates-black {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.inter-black {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 854;
+    font-style: normal;
+}
+
+body {
+    margin-top: -24px;
+}
+
+.bg-red {
+    background-color: #8B0000;
+}
+
+.btn-login {
+    width: 108px;
+    height: 61px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    width: 108px;
+    height: 61px;
+    border-radius: 69px;
+    background: #E60000;
+}
+
+.hero {
+    margin-top: 0;
+    background-image: url("/assets/bghome.png");
+    height: 930px;
+}
+
+.home-button {
+    width: 108px;
+    height: 29px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.project-button {
+    width: 215px;
+    height: 29px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.details-button {
+    width: 215px;
+    height: 29px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.top-buttons {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.motto {
+    width: 662px;
+    height: 233px;
+    color: #FFF;
+    text-align: left;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-left: 139px;
+}
+
+.main-text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 139px;
+}
+
+
+.enroll-box1 {
+    width: 247px;
+    height: 83px;
+    font-size: 30px;
+    border-radius: 69px;
+    background: #E60000;
+    margin-top: 28px;
+    margin-left: 139px;
+}
+
+.info-box {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+
+.why,
+.prog,
+.app {
+    width: 524px;
+    height: 524px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.why::before,
+.prog::before,
+.app::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 12px;
+}
+
+
+.box-content {
+    position: relative;
+    color: white;
+    text-align: left;
+}
+
+
+.box-content .title {
+    font-family: "Montserrat Alternates";
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 6px;
+}
+
+.box-content .description {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 20px;
+    line-height: 1.4;
+}
+
+.box-content {
+    position: relative;
+    color: white;
+    text-align: left;
+}
+
+.box-content h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.box-content p {
+    font-size: 18x;
+    line-height: 1.4;
+}
+
+.why {
+    background-image: url("../assets/why.png");
+}
+
+.prog {
+    background-image: url("../assets/prog.png");
+}
+
+.app {
+    background-image: url("../assets/app.png");
+}
+
+.games {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    background: linear-gradient(90deg, #710000, #A90000, #FB0000, #A80000, #680000);
+}
+
+.games-text {
+    width: 663px;
+    height: 183px;
+    color: #FFF;
+    font-family: "Montserrat Alternates";
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scroll 25s linear infinite;
+}
+
+.carousel img {
+    width: 160px;
+    height: 159px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px #ff0000;
+    margin-right: 95px;
+}
+
+
+.carousel img:hover {
+    transform: scale(1.1);
+    box-shadow:
+        0 0 10px #8b0000,
+        0 0 20px #8b0000,
+        0 0 40px #8b0000;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+.skills-section {
+    width: 1633px;
+    height: 525px;
+    aspect-ratio: 535/172;
+    padding: 80px 120px;
+    background-image: url("../assets/skills.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.skills-title {
+    width: 1219.323px;
+    height: 109.208px;
+    color: #FFF;
+    font-family: "Montserrat Alternates";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.skills-list {
+    width: 1080.057px;
+    height: 332.634px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.environment-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 614px;
+    padding: 0 80px;
+    gap: 40px;
+
+
+    background: url("../assets/learn.png") lightgray -2.872px -4.419px / 100.166% 177.316% no-repeat;
+
+    position: relative;
+}
+
+.environment-text {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+.environment-text h2 {
+    width: 100%;
+    color: #FFF;
+    font-family: "Montserrat Alternates";
+    font-size: 63px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.environment-text p {
+    width: 100%;
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 36px;
+    line-height: 1.5;
+}
+
+.environment-image {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.environment-image img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.cta-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 282px;
+    padding: 0 80px;
+    background: url("../assets/start.png") lightgray 50% / cover no-repeat;
+}
+
+.cta-text {
+    max-width: 50%;
+}
+
+.cta-text h2 {
+    width: 1630px;
+    height: 69px;
+    color: #FFF;
+    font-family: "Montserrat Alternates";
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.cta-text p {
+    width: 1079px;
+    height: 110px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.cta-button a {
+    width: 247px;
+    height: 83px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    border-radius: 69px;
+    background: #7E0000;
+}
+
+.cta-section-inline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px 80px;
+    width: 100%;
+    background: url("../assets/start.png") lightgray 50% / cover no-repeat;
+}
+
+.cta-text-inline h2 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 10px 0;
+}
+
+.cta-text-inline p {
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+    max-width: 600px;
+}
+
+
+.enroll-box1 {
+    width: 247px !important;
+    height: 83px !important;
+    border-radius: 69px;
+    background: #E60000;
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    line-height: normal;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.cic-footer {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+
+    color: #fff; /* 🔥 THIS FIXES YOUR TEXT */
+
+    background: linear-gradient(rgba(139, 0, 0, 0.4), rgba(139, 0, 0, 0.4)),
+                url('../assets/footer.png') center;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 60px 0;
+}
+
+.footer-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* Optional: justify content if needed, e.g. space-around */
+}
+
+.footer-col-6 {
+    flex: 0 0 50%; 
+    max-width: 50%;
+}
+
+
+.left-content {
+    padding-right: 40px;
+}
+
+.footer-logo {
+    width: 160px;
+    margin-bottom: 25px;
+}
+
+.school-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.city-name {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.social-row img {
+    width: 28px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.copyright-text {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+
+.right-content {
+    padding-left: 40px;
+    border-left: 1px solid rgba(255, 255, 255, 0.4); 
+    display: flex;
+    flex-direction: column;
+}
+
+.address-section p {
+    margin-bottom: 4px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.footer-line {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    margin: 25px 0;
+    width: 100%;
+}
+
+.links-row {
+    display: flex;
+    gap: 80px;
+}
+
+.links-row a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+.links-row a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    .right-content {
+        border-left: none;
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}
