@@ -1,123 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-	<link rel="stylesheet" href="style.css">
-	<title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIC Game Dev</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700;800;900&family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
 </head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body class="bg-red">
+    <div class="hero">
+        <div class="container">
+            <header>
+                <div class="d-flex align-items-center justify-content-between">
+                    <a href="/" class="d-flex align-items-center text-white text-decoration-none">
+                        <img src="./assets/cic-logo.png" alt="cic logo" style="width: 109px; height: 109px;">
+                    </a>
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <div class="top-buttons">
+                            <div class="home-button"><li><a href="#" class="nav-link px-2 text-white">Home</a></li></div>
+                            <div class="project-button"><li><a href="#" class="nav-link px-2 text-white">Project</a></li></div>
+                            <div class="details-button"><li><a href="#" class="nav-link px-2 text-white">Course Details</a></li></div>
+                        </div>
+                    </ul>
+                    <div class="text-end">
+                        <a href="#" class="btn btn-login text-white montserrat-alternates-bold">Login</a>
+                    </div>
+                </div>
+            </header>
+            <div class="col-12 mt-5 pt-0">
+                <div class="row">
+                    <div class="col-lg-6 text-start">
+                        <h1 class="motto text-white montserrat-alternates-black">
+                            Turn Your Passion <br> for Games into <br> Real Skills.
+                        </h1>
+                    </div>
+                    <div class="main-text">
+                        Learning how to design, code, and build your <br> own games from scratch. <br>
+                        Perfect for beginners and aspiring game <br> development.
+                    </div>
+                    <div>
+                        <a href="#" class="btn enroll-box1 text-white inter-black">ENROLL NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<body>
-	<header>
-		<a href="#" class="logo">Crxtl</a>
+    <div class="info-box">
+        <div class="why"><div class="box-content"><div class="title">Why Join This Course?</div><div class="description"><p>→ Beginner-friendly<br>→ Hands-on projects<br>→ Real tools</p></div></div></div>
+        <div class="prog"><div class="box-content"><div class="title">Languages We Use</div><div class="description"><p>→ C# / Java<br>→ Python<br>→ Javascript</p></div></div></div>
+        <div class="app"><div class="box-content"><div class="title">Design Apps</div><div class="description"><p>→ Blender<br>→ Piskel<br>→ GIMP</p></div></div></div>
+    </div>
 
-		<nav>
-			<a href="#home" class="active">HOME</a>
-			<a href="#about">ABOUT</a>
-			<a href="#skills">SKILLS</a>
-			<a href="#education">EDUCATION</a>
-			<a href="#project">PROJECT</a>
-			<a href="#contact">CONTACT</a>
-		</nav>
-	</header>
+    <div class="games">
+        <p class="games-text">Example of games you'll be able to create</p>
+        <div class="carousel">
+            <div class="carousel-track">
+                <img src="assets/GI.png"><img src="assets/val.png"><img src="assets/mc.png">
+                <img src="assets/GI.png"><img src="assets/val.png"><img src="assets/mc.png">
+            </div>
+        </div>
+    </div>
 
-	<!-- HOME -->
-	<section id="home" class="home">
-		<div class="home-img">
-			<img src="main.jpg" alt="">
-		</div>
+    <div class="skills-section">
+        <h2 class="skills-title">Skills You’ll Gain</h2>
+        <ul class="skills-list">
+            <li>Design fun game mechanics</li>
+            <li>Build complete playable games</li>
+            <li>Use a real game engine</li>
+        </ul>
+    </div>
 
-		<div class="home-content">
-			<h1>Hi! It's <span>Alaine</span></h1>
-			<h3 class="typing-text">I'm a <span></span></h3>
-			<p>interested in technology and design. I enjoy exploring new ideas and aim to develop my skills further while creating projects that express creativity and purpose.</p>
+    <div class="environment-section">
+        <div class="environment-text">
+            <h2>Learn in a professional environment</h2>
+            <p>Students work in the school's Mac Laboratory using modern Mac computers.</p>
+        </div>
+        <div class="environment-image">
+            <img src="assets/mac.gif" alt="Mac Laboratory">
+        </div>
+    </div>
 
-			<div class="social-icons">
-				<a href="https://github.com/Crxtel-exe" target="_blank"><i class="fa-brands fa-github"></i></a>
-				<a href="https://www.youtube.com/@IxTheLilShit" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-				<a href="https://discordapp.com/users/crxtl.exe" target="_blank"><i class="fa-brands fa-discord"></i></a>
-				<a href="mailto:ladignonalaine@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-			</div>
+    <div class="cta-section-inline">
+        <div class="cta-text-inline">
+            <h2>Start Your Game Development Journey</h2>
+            <p>Ready to be part of the CIC community? Apply today.</p>
+        </div>
+        <a href="#" class="enroll-box1">Enroll Now</a>
+    </div>
 
-			<a href="#" class="btn">Hire Me</a>
-		</div>
-	</section>
-
-	<!-- ABOUT -->
-	<section id="about">
-		<h1>About Me</h1>
-		<div class="info-box">
-			<p>Hi! I’m Alaine, a student interested in technology and design. I enjoy learning new things, exploring creative ideas, and working on projects that allow me to express both logic and creativity. I’m currently studying Information Technology, where I’m developing my skills in areas like computer systems, programming, and digital design.</p>
-			<br><br>
-			<p>I’m still growing my skills, but I’m excited to improve step-by-step and discover where my passion for tech will take me. I believe learning is a continuous journey, and I want to create projects that reflect my ideas, creativity, and personal growth.</p>
-		</div>
-	</section>
-
-	<!-- SKILLS -->
-	<section id="skills">
-		<h1>Skills</h1>
-		<div class="info-box">
-			<p><b>Design Skills</b><br>
-				Graphic Design<br>
-				Photo Editing<br>
-				Video Editing<br>
-				Typography & Color Theory<br>
-				Thumbnail / Poster / Banner Design<br><br>
-				<b>Editing Tools</b><br>
-				Canva (Primary Tool)<br>
-				Basic Photoshop<br>
-				Figma for Website Design<br>
-				CapCut for simple video edits<br>
-				Lightroom (for photo tone & mood adjustments)
-			</p>
-		</div>
-	</section>
-
-	<!-- EDUCATION -->
-	<section id="education">
-		<h1>Education</h1>
-		<div class="info-box">
-			<p><b><i>Kindergarten – Elementary:</b></i> Palagay Integrated School<br>
-				<b><i>Junior High School:</b></i> Marciano del Rosario Memorial National High School<br>
-				<b><i>Senior High School:</b></i> Marciano del Rosario Memorial National High School (STEM STRAND)<br>
-				<b><i>College (current):</b></i> College of the Immaculate Conception (Bachelor of Science in Information Technology)
-			</p>
-		</div>
-	</section>
-
-	<!-- PROJECT -->
-	<section id="project">
-		<h1>My Projects</h1>
-		<div class="project-container">
-			<a href="https://drive.google.com/drive/folders/17vzxXA8MvmT3BwxsjgAqxvEQ1k2Z1bTc?usp=sharing" target="_blank" class="project-box">
-			<i class="fa-solid fa-image"></i>
-			<h2>Photo Edits</h2>
-			<p>Explore my creative photo edits.</p>
-			</a>
-
-			<a href="https://drive.google.com/drive/folders/1byTG3uBkHGGzGe_NZNK6ycIxEJZCq_L_?usp=sharing" target="_blank" class="project-box">
-			<i class="fa-solid fa-video"></i>
-			<h2>Video Edits</h2>
-			<p>Watch my short edits and simple video projects.</p>
-			</a>
-		</div>
-	</section>
-
-
-	<!-- CONTACT -->
-	<section id="contact">
-		<h1>Contact Me</h1>
-		<div class="info-box">
-			<p>✨ If you’d like to reach me, feel free to contact me through: ✨<br><br>
-				Email: <a href="mailto:ladignonalaine@gmail.com">ladignonalaine@gmail.com</a><br>
-				Discord: <a href="https://discordapp.com/users/crxtl.exe" target="_blank">Crxtl.exe</a><br>
-				YouTube: <a href="https://www.youtube.com/@IxTheLilShit" target="_blank">IxTheLilShit</a><br>
-				GitHub: <a href="https://github.com/Crxtel-exe" target="_blank">Crxtel-exe</a>
-			</p>
-		</div>
-	</section>
-
+    <footer class="cic-footer">
+        <div class="footer-container">
+            <div class="footer-col-6 left-content">
+                <img src="assets/cic-logo.png" alt="CIC Logo" class="footer-logo">
+                <h2 class="school-title">COLLEGE OF THE IMMACULATE CONCEPTION <span class="city-name">CABANATUAN CITY</span></h2>
+                <div class="social-row">
+                    <img src="assets/fb-logo.png" alt="FB">
+                    <img src="assets/yt-logo.webp" alt="YT">
+                </div>
+                <p class="copyright-text">© All rights Reserved 2023</p>
+            </div>
+            <div class="footer-col-6 right-content">
+                <div class="address-section">
+                    <p>College of the Immaculate Conception</p>
+                    <p>J. Llano Street, Maharlika Highway, Cabanatuan City</p>
+                </div>
+                <hr class="footer-line">
+                <div class="links-row">
+                    <div class="links-left">
+                        <a href="#">Maps & Location</a>
+                        <a href="#">Contact us</a>
+                    </div>
+                    <div class="links-right"><a href="#">Visit</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
