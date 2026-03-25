@@ -1,290 +1,286 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
-
-*{
+/* ===================== RESET ===================== */
+html, body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    font-family: 'Poppins', sans-serif;
-}
-
-html{
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-}
-
-body{
     width: 100%;
-    color: white;
     overflow-x: hidden;
+    font-family: Arial, sans-serif;
 }
 
-/* HEADER */
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===================== HERO ===================== */
+.hero {
     width: 100%;
-    padding: 1.5rem 9%;
+    min-height: 100vh;
+
+    /* ✅ FIXED BACKGROUND IMAGE */
+    background: url('../assets/background.png') no-repeat center center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 80px;
+    box-sizing: border-box;
+}
+
+.motto {
+    font-size: 64px;
+    color: #fff;
+    font-weight: 800;
+    max-width: 700px;
+}
+
+.main-text {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+    max-width: 500px;
+}
+
+.enroll-box1 {
+    margin-top: 20px;
+    width: 250px;
+    height: 60px;
+    background: #8B0000;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* ===================== NAV ===================== */
+.top-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+/* ===================== INFO BOX ===================== */
+.info-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.why, .prog, .app {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+}
+
+/* ===================== GAMES ===================== */
+.games {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+.games-text {
+    font-size: 40px;
+    font-weight: bold;
+    max-width: 500px;
+}
+
+/* ===================== SKILLS ===================== */
+.skills-section {
+    width: 100%;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills-title {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.skills-list {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* ===================== ENVIRONMENT ===================== */
+.environment-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 40px;
+    flex-wrap: wrap;
+}
+
+.environment-text {
+    max-width: 500px;
+}
+
+.environment-text h2 {
+    font-size: 36px;
+}
+
+.environment-text p {
+    font-size: 18px;
+}
+
+.environment-image {
+    max-width: 500px;
+}
+
+/* ===================== CTA ===================== */
+.cta-section-inline {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    background: #8B0000;
+    color: #fff;
+    padding: 60px 80px;
+    flex-wrap: wrap;
 }
 
-.logo{
-    font-size: 3rem;
-    color: #9457eb;
-    font-weight: 800;
+.cta-text-inline h2 {
+    font-size: 36px;
+}
+
+.cta-text-inline p {
+    font-size: 18px;
+}
+
+.cta-btn {
+    background: #fff;
+    color: #8B0000;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
     cursor: pointer;
 }
 
-nav a{
-    font-size: 1.8rem;
-    color: white;
-    margin-left: 4rem;
-    transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
+/* ===================== FOOTER ===================== */
+.cic-footer {
+    width: 100%;
+
+    /* ✅ FIXED BACKGROUND IMAGE (NO MORE FULL MAROON) */
+    background: url('../assets/footer.png') no-repeat center center;
+    background-size: cover;
+
+    padding: 60px 20px;
+    color: #fff;
 }
 
-nav a:hover,
-nav a.active{
-    color: #9457eb;
-    border-bottom: 3px solid #9457eb;
-}
-
-/* SECTIONS */
-section{
-    min-height: 100vh;
-    padding: 14rem 9% 5rem;
-    text-align: center;
-}
-
-/* HOME */
-.home{
+.footer-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.home-content h1{
-    font-size: 6rem;
+.footer-col-6 {
+    flex: 1;
+    min-width: 250px;
 }
 
-.home-content h3{
-    font-size: 3.5rem;
+.right-content {
+    border-left: 1px solid rgba(255,255,255,0.2);
+    padding-left: 20px;
 }
 
-.home-content p{
-    font-size: 1.7rem;
-    line-height: 1.7;
-    margin-top: 1.5rem;
-}
+/* ===================== MOBILE ===================== */
+@media (max-width: 768px) {
 
-span{
-    color: #9457eb;
-}
+    /* HERO */
+    .hero {
+        padding: 40px 20px;
+        text-align: center;
+    }
 
-/* SOCIAL ICONS */
-.social-icons a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    margin-right: 1.2rem;
-    border-radius: 50%;
-    border: 2px solid #9457eb;
-    color: #9457eb;
-    font-size: 2rem;
-    transition: 0.3s ease;
-}
+    .motto {
+        font-size: 32px;
+    }
 
-.social-icons a:hover{
-    background: #9457eb;
-    color: black;
-    transform: scale(1.2);
-}
+    .main-text {
+        font-size: 16px;
+    }
 
-/* BUTTON */
-.btn{
-    display: inline-block;
-    margin-top: 2rem;
-    padding: 1rem 3rem;
-    border-radius: 4rem;
-    border: 2px solid #9457eb;
-    color: #9457eb;
-    font-size: 1.6rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
+    .enroll-box1 {
+        width: 100%;
+        font-size: 18px;
+    }
 
-.btn:hover{
-    background: #9457eb;
-    color: black;
-}
+    /* NAV */
+    .top-buttons {
+        position: static;
+        justify-content: center;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
 
-/* IMAGE */
-.home-img img{
-    width: 32vw;
-    border-radius: 50%;
-}
+    /* GAMES */
+    .games-text {
+        font-size: 28px;
+    }
 
-/* SECTION TITLES */
-section h1{
-    text-align: center;
-    font-size: 5rem;
-    color: #9457eb;
-    margin-bottom: 2rem;
-}
+    /* SKILLS */
+    .skills-title {
+        font-size: 32px;
+    }
 
-/* INFO BOX STYLE — made larger & more readable */
-.info-box {
-  background: rgba(255, 255, 255, 0.05);
-  border: 2px solid #9457eb;
-  border-radius: 20px;
-  padding: 5rem;                 /* more inner spacing */
-  margin: 3rem auto;
-  width: 90%;                    /* wider box */
-  max-width: 1100px;             /* slightly larger max width */
-  box-shadow: 0 0 25px rgba(148, 87, 235, 0.3);
-  backdrop-filter: blur(10px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  font-size: 1.9rem;             /* larger text */
-  line-height: 1.9;              /* more breathing space between lines */
-}
+    .skills-list {
+        font-size: 18px;
+    }
 
-.info-box:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 35px rgba(148, 87, 235, 0.6);
-}
+    /* ENVIRONMENT */
+    .environment-section {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
 
+    .environment-text h2 {
+        font-size: 28px;
+    }
 
-/*Background Purple Gradient Animation */
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+    .environment-text p {
+        font-size: 16px;
+    }
 
-/* HOME */
-#home {
-  background: linear-gradient(-45deg, #0a001a, #2d0057, #45007a, #0f001f);
-  background-size: 300% 300%;
-  animation: gradientShift 10s ease infinite;
-}
+    /* CTA */
+    .cta-section-inline {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 40px 20px;
+    }
 
-/* ABOUT */
-#about {
-  background: linear-gradient(-45deg, #12002e, #33005f, #5e00a0, #1a0033);
-  background-size: 300% 300%;
-  animation: gradientShift 12s ease infinite;
-}
+    .cta-text-inline h2 {
+        font-size: 28px;
+    }
 
-/* SKILLS */
-#skills {
-  background: linear-gradient(-45deg, #1a0033, #400080, #6b00b3, #2a004d);
-  background-size: 300% 300%;
-  animation: gradientShift 14s ease infinite;
-}
+    .cta-text-inline p {
+        font-size: 16px;
+    }
 
-/* EDUCATION */
-#education {
-  background: linear-gradient(-45deg, #0a001a, #26004d, #52008a, #14002b);
-  background-size: 300% 300%;
-  animation: gradientShift 16s ease infinite;
-}
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
 
-/* PROJECT */
-#project {
-  background: linear-gradient(-45deg, #18002e, #3b0077, #7a00c1, #29004d);
-  background-size: 300% 300%;
-  animation: gradientShift 18s ease infinite;
-}
-
-/* CONTACT */
-#contact {
-  background: linear-gradient(-45deg, #0f001f, #2a0052, #560097, #190030);
-  background-size: 300% 300%;
-  animation: gradientShift 20s ease infinite;
-}
-
-
-/* TYPING EFFECT */
-.typing-text span::before{
-    content: "Editor";
-    animation: words 20s infinite;
-    color: #9457eb;
-}
-
-@keyframes words{
-    0%,20%{content:"Photo Editor";}
-    21%,40%{content:"Video Editor";}
-    41%,60%{content:"Gamer";}
-    61%,80%{content:"Tech Enthusiast";}
-    81%,100%{content:"Youtuber";}
-}
-
-/* 🎨 PROJECT SECTION STYLING */
-.project-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3rem;
-  margin-top: 4rem;
-}
-
-.project-box {
-  background: rgba(255, 255, 255, 0.05);
-  border: 2px solid #9457eb;
-  border-radius: 20px;
-  width: 300px;
-  padding: 3rem 2rem;
-  text-align: center;
-  color: white;
-  text-decoration: none;
-  transition: 0.3s ease;
-  box-shadow: 0 0 15px rgba(148, 87, 235, 0.3);
-  backdrop-filter: blur(8px);
-}
-
-.project-box i {
-  font-size: 4rem;
-  color: #b47aff;
-  margin-bottom: 1rem;
-}
-
-.project-box h2 {
-  font-size: 2.2rem;
-  color: #d2a8ff;
-  margin-bottom: 1rem;
-}
-
-.project-box p {
-  font-size: 1.4rem;
-  color: #ddd;
-  line-height: 1.5;
-}
-
-.project-box:hover {
-  transform: scale(1.05);
-  background: rgba(148, 87, 235, 0.15);
-  box-shadow: 0 0 25px rgba(180, 122, 255, 0.7);
-  border-color: #b47aff;
-}
-
-/* General Link Style */
-a {
-  color: #7aa8ff; /* lighter royal blue */
-  text-decoration: none;
-  transition: 0.3s ease;
-}
-
-a:hover {
-  color: #a8c4ff; /* brighter blue when hovered */
-  text-shadow: 0 0 10px #7aa8ff, 0 0 20px #4f7fff; /* glowing blue effect */
+    .right-content {
+        border-left: none;
+        border-top: 1px solid rgba(255,255,255,0.2);
+        padding-top: 20px;
+        padding-left: 0;
+    }
 }
