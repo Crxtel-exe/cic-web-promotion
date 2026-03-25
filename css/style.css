@@ -586,3 +586,158 @@ html, body {
         border-top: 1px solid rgba(255, 255, 255, 0.2);
     }
 }
+
+
+
+
+
+/* ========================= */
+/* MOBILE FIX (DO NOT REMOVE DESKTOP STYLES) */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    /* HERO */
+    .hero {
+        height: auto;
+        padding: 20px;
+    }
+
+    .motto {
+        width: 100%;
+        height: auto;
+        font-size: 32px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .main-text {
+        margin-left: 0;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .enroll-box1 {
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    /* NAV */
+    .top-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* INFO BOX */
+    .info-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why, .prog, .app {
+        width: 90%;
+        height: auto;
+    }
+
+    .box-content .title {
+        font-size: 24px;
+    }
+
+    .box-content .description {
+        font-size: 16px;
+    }
+
+    /* GAMES */
+    .games {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .games-text {
+        width: 100%;
+        height: auto;
+        font-size: 28px;
+    }
+
+    .carousel img {
+        width: 100px;
+        margin-right: 20px;
+    }
+
+    /* SKILLS */
+    .skills-section {
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .skills-title {
+        width: 100%;
+        height: auto;
+        font-size: 32px;
+    }
+
+    .skills-list {
+        width: 100%;
+        height: auto;
+        font-size: 18px;
+    }
+
+    /* ENVIRONMENT */
+    .environment-section {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .environment-text,
+    .environment-image {
+        max-width: 100%;
+    }
+
+    .environment-text h2 {
+        font-size: 28px;
+    }
+
+    .environment-text p {
+        font-size: 16px;
+    }
+
+    /* CTA */
+    .cta-section-inline {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .cta-text-inline h2 {
+        font-size: 28px;
+    }
+
+    .cta-text-inline p {
+        font-size: 16px;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-col-6 {
+        max-width: 100%;
+    }
+
+    .right-content {
+        border-left: none;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .links-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
