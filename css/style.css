@@ -52,7 +52,7 @@ body {
 .hero {
     margin-top: 0;
     /* Added ../ to exit the CSS folder */
-    background-image: url("../assets/bghome.png"); 
+    background-image: url("assets/bghome.png");
     height: 930px;
     background-size: cover;
     background-position: center;
