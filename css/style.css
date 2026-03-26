@@ -51,8 +51,11 @@ body {
 
 .hero {
     margin-top: 0;
-    background-image: url("/assets/bghome.png");
+    /* Fixed: Use ../ to go back one folder from /css/ to the root, then into /assets/ */
+    background-image: url("../assets/bghome.png"); 
     height: 930px;
+    background-size: cover;
+    background-position: center;
 }
 
 .home-button {
