@@ -50,9 +50,8 @@ body {
 }
 
 .hero {
-    background-image: url("../assets/bghome.png");
-    background-size: cover;
-    background-position: center;
+    margin-top: 0;
+    background-image: url("/assets/bghome.png");
     height: 930px;
 }
 
